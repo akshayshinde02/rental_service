@@ -78,7 +78,7 @@ const MuiStepper = ({isPositionFixed, astepper}) => {
     return (
         <div className='allstepper' style={positionStyle}>
         <ThemeProvider theme={theme}> 
-            <Box sx={{ marginBottom: "20px", paddingBottom:"30px" }}>
+            <Box >
                 <Box mx={0} mt={2}>
                     <Stepper activeStep={activestep} alternativeLabel>
                         {activities.map((step, index) => {
