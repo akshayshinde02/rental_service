@@ -121,10 +121,11 @@ const Towing = () => {
             </Button>
        </div>
        <div className='tow-dolly-price'>
-          <span >$101.00</span>
+          <span className='center'>$101.00</span>
           <div className="towing-button">
-
-          <Button  variant='contained' sx={{fontSize:'0.8rem'}} onClick={handleClose} >Select Equipment</Button>
+            <div className='butn12'>
+          <Button  variant='contained' className='butn12' sx={{fontSize:'0.8rem'}} onClick={handleClose} >Equip</Button>
+          </div>
           </div>
         </div>
      </div>
@@ -155,7 +156,9 @@ const Towing = () => {
           <span >$201.00</span>
           <div className="towing-button">
 
-          <Button  variant='contained' sx={{fontSize:'0.8rem'}} onClick={handleClose} >Select Equipment</Button>
+          <div className='butn12'>
+          <Button  variant='contained' sx={{fontSize:'0.8rem'}} onClick={handleClose} >Equip</Button>
+          </div>
           </div>
         </div>
      </div>

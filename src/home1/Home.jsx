@@ -4,13 +4,15 @@ import { Button, FormControl,  MenuItem, Select, Typography } from '@mui/materia
 import RentalDate from './RentalDate';
 import TextField from '@mui/material/TextField';
 import { Link } from 'react-router-dom'
+import { OrderState } from '../Context';
 
  
 
 const Home = () => {
-    const [category, setCategory] = useState('');
-  const [subCategory, setSubCategory] = useState('');
-
+  // const [category, setCategory] = useState('');
+  // const [subCategory, setSubCategory] = useState('');
+  // const [age, setage] = React.useState('');
+  const {category,setCategory,subCategory,setSubCategory,age,setage} = OrderState();
 // Options for the first dropdown
 const categories = ['Cars', 'Trucks'];
 
@@ -30,7 +32,6 @@ const handleCategoryChange = (event) => {
 };
 
 
-    const [age, setage] = React.useState('');
 
     const handleChangeAge = (event) => {
       setage(event.target.value);

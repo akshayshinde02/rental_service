@@ -51,7 +51,7 @@ const Trailer = () => {
           value={trailer}
           label="Trailer"
           onChange={handleChangeTrailer}
-          sx={{width:'400px', height:'43px'}}
+          sx={{width:'200px', height:'43px'}}
           placeholder='4 x 8 Cargo Trailer $686.00'
           >
             <MenuItem value='4x8 Cargo Trailer'>4' x 8' Cargo Trailer $686.00</MenuItem>
@@ -72,7 +72,7 @@ const Trailer = () => {
           value={truck}
           label="Trucks"
           onChange={handleChangeTruck}
-          sx={{width:'400px', height:'43px'}}
+          sx={{width:'200px', height:'43px'}}
           
           >
             <MenuItem value='10truck'>10' Truck $2,582.00</MenuItem>
@@ -103,14 +103,14 @@ const Trailer = () => {
             <div className="truckimg">
                 <img 
 
-                height='250'
+                height='200'
                 
                 src="https://www.enterprisetrucks.com/content/dam/truckrental/en_us/carouselimageswithouttext/vehicles/pickup-trucks/OQAR_22_ThreeFourths%20Ton%20Pickup_AngularFront_US-ENG.png" alt="10' Truck" 
                 style={{
                     aspectRatio:"300/200",
                     objectFit:'cover',
                 }}
-                width='350'
+                width='300'
                 />
 
                 <div>

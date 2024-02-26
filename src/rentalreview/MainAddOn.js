@@ -155,7 +155,7 @@ const MainAddOn = ({ closeModal }) => {
                 <div className="addondiv">
                     <h3>Add On's</h3>
                 </div>
-                <button className="bts1" onClick={() => goToRegistration1(true)}>
+                <button className="bts11" onClick={() => goToRegistration1(true)}>
                         Continue
                     </button>
                 <div className='carditems'>

@@ -110,8 +110,8 @@ const LaborPickUp = ({onClose}) => {
 
     <Button variant="contained" 
     color='info'
-    sx={{display:"flex"
-      
+    sx={{display:"flex",
+      marginTop:"15px"
   }}  
     >Apply Filters</Button>
     </div>

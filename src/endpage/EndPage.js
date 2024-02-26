@@ -54,11 +54,11 @@ const EndPage = ({  closeModal }) => {
                 <div className='flexdiv'>
                 <div className="cardyy">
                         <img src={logo1} className='img' /> <br />
-                        <h2 className='name'>Courior Service</h2>
+                        <h2 className='named1'>Courior Service</h2>
                     </div>
                 <div className="cardyy">
                         <img src={logo1} className='img' /> <br />
-                        <h2 className='name'>Storage Service</h2>
+                        <h2 className='named1'>Storage Service</h2>
                     </div>
                 </div>
                 {/* <div className='flexy'>

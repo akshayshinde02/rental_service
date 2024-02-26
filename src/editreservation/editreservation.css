@@ -93,7 +93,7 @@
 .editdiv{
     display: flex;
     justify-content: space-between;
-    height: 200vh;
+    /* height: 200vh; */
 }
 
 .pickdrop1{
@@ -217,6 +217,17 @@
 
 }
 
+.pickup1{
+  padding: 30px ;
+  padding-left: 90px;
+  padding-right: 90px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  justify-content: center;
+}
+
 .wrapperItem{
     position: fixed;
     left: 0;
@@ -298,7 +309,7 @@ input[type="checkbox"] {
 .addondivss{
   display: flex;
   flex-wrap: wrap;
-  margin-left: 20px;
+  /* margin-left: 0px; */
   gap:1rem;
 }
 
@@ -321,6 +332,15 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
   }
+  .numline11{
+    margin-top: 10px;
+    margin-bottom: 10px;
+        width: 100%;
+        background-color: gray;
+        /* margin-left: 250px; */
+        height: 2px;
+
+}
 
   .pickdrop1{
 
@@ -402,6 +422,11 @@ input[type="checkbox"] {
  
  @media (max-width: 426px){
 
+  .bold{
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
   .cusdetail{
     all:unset;
     gap:2rem;
@@ -445,6 +470,24 @@ input[type="checkbox"] {
 
 
  @media (max-width: 320px){
+
+  .btnss{
+    font-size: 0.8rem;
+    padding:5px;
+    padding-bottom: 10px;
+  }
+
+  .pickup1{
+    all:unset;
+    padding: 30px ;
+  /* padding-left: 40px; */
+  /* padding-right: 90px; */
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  justify-content: center;
+  }
 
   .cusdetail{
     all:unset;

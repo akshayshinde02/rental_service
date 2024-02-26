@@ -7,8 +7,12 @@ import { Button } from '@mui/material';
 // import second from 'first'
 import {useNavigate} from 'react-router-dom'
 import MuiStepper from '../steper/MuiStepper';
+import { OrderState } from '../Context';
 
 const TruckRender = () => {
+  
+  const {category,setCategory,subCategory,setSubCategory,age,setage} = OrderState();
+  console.log(category," " ,subCategory," ",age)
   const[num,setNum]=useState(0);
   // const [astepper,setasteper] = useState(0);
   

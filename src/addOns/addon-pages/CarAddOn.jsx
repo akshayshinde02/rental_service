@@ -283,7 +283,8 @@ const CarAddOn = () => {
       alignItems:"center",
       justifyContent:"center",
       display:"flex",width:"140px",
-    flexDirection:"row-reverse"
+    flexDirection:"row-reverse",
+    marginTop:"10px"
       
   }}
   onClick={handleClose} 

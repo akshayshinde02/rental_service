@@ -190,6 +190,9 @@
 @media(max-width:426px){
 
   
+    .containersss{
+        width: 80%;
+    }
 
     .liney{
         all:unset;
@@ -213,7 +216,7 @@
     }
     
     .provide{
-        margin-top: -10px;
+        /* margin-top: -10px; */
         font-size: 16px;
     }
 
@@ -225,6 +228,10 @@
         flex-direction: column;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .named1{
+        font-size: 1rem;
     }
   
     

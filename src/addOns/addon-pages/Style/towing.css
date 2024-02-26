@@ -58,3 +58,43 @@
   margin-top: 1rem;
   margin-left: 1rem;
 }
+
+
+@media (max-width:376px) {
+  
+  .towingfilter{
+    all:unset;
+    display: grid; 
+    /* grid-template-columns: repeat(3, minmax(0, 1fr));*/
+    gap: 1rem; 
+    margin-bottom: 1rem; 
+
+  }
+
+  .towing-page{
+    /* display: flex; equivalent to flex in Tailwind */
+    flex-direction: column;
+  }
+
+  .tow-dolly{
+    text-align: center;
+  }
+
+  .center{
+    text-align: center;
+  }
+
+  .tow-dolly-price span{
+    all:unset;
+    margin-bottom: 8px;
+    font-size: 1.125rem; /* equivalent to text-lg in Tailwind */
+    font-weight: 600; 
+    align-items: center;
+    
+  }
+ 
+  .butn12{
+    margin-left: -23px;
+  }
+
+}

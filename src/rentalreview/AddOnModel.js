@@ -46,7 +46,7 @@ const AddOnModel = () => {
             </div>
             <div className='maincontainer1'>
 
-                <div className='container7 responsivecon'>
+                <div className='container78 responsivecon'>
                     <div className='center'>
                         <span className='titley1 servicetitle'>Service Truck Name</span><br />
 
@@ -68,54 +68,8 @@ const AddOnModel = () => {
                             <div className='img2'>
                                 <img src={mainImage} className='truckimg2' />
                             </div>
-                            {/* <img src={logo1} className='truckimg' /> */}
                         </div>
                     </div>
-
-                    {/* <div className='charges'>
-                        <div className='pricestitle'>
-                            <span className='bold'>Cargo Truck</span>
-                            <span className='cost'>$354</span>
-                        </div>
-
-                        <div className='pricestitle'>
-                            <span className='bold'> Protection</span> <br />
-                            <span className='cost'>$354</span>
-                        </div>
-                        <span className='top'>Supplemental Liability (Sli) $97.35 <br />
-                            Physical Damage Waiver $114.95  <br />
-                            Personal Accident & Cargo $52.25   <br />
-                            Roadside Safety Net $69.95</span> <br /><br />
-
-                        <div className='pricestitle'>
-                            <span className='bold'> Add Ons  </span><br />
-                            <span className='cost'>$354</span>
-                        </div>
-                        <span className='top'>No Hand Truck(s)  = $0.00 <br />
-                            No Furniture Pads  = $0.00</span><br /><br />
-
-                        <div className='pricestitle'>
-                            <span className='bold'> Taxes </span><br />
-                            <span className='cost'>$354</span>
-                        </div>
-                        <span className='top'>
-                            Sales Tax $244.49   <br />
-                            Cost Recovery Fee 5 Day(S) @ 3.50 = $17.50  <br />
-                            Energy Recovery Fee 5 Day(S) @ .13 = $0.65  <br />
-                            Fleet Management Fee 5 Day(S) @ 1.00 = $5.00 <br />
-                        </span> <br />
-                        <span className='top'>
-                            Sales Tax $244.49   <br />
-                            Cost Recovery Fee 5 Day(S) @ 3.50 = $17.50  <br />
-                            Energy Recovery Fee 5 Day(S) @ .13 = $0.65  <br />
-                            Fleet Management Fee 5 Day(S) @ 1.00 = $5.00 <br />
-                        </span> <br />
-
-                        <div className='pricestitle'>
-                            <span className='estcost'>Estimated Cost</span><br />
-                            <span className='cost estcost'>$2433.23</span><br />
-                        </div>
-                    </div> */}
 
                 <div className='rentalservicename center'>Rental Service Name</div><br />
                     <div className='descriptions'>
@@ -154,10 +108,7 @@ const AddOnModel = () => {
                             </button>
 
                             </div>
-                            {/* <div
-                                className="line2"
-                                style={{ width: `${17}%` }}
-                            ></div> */}
+                            
                             <div className='dropupbox'>
                                 <span className='titley1 bold'>Drop Up</span><br />
                                 <span className='dropupaddress space'>2001 Los Angels</span> <br />
@@ -173,7 +124,7 @@ const AddOnModel = () => {
                     </div>
 
                     <button className="buttonss btn11" onClick={() => setShowModal(true)}>
-                        Click To Continue
+                        Continue
                     </button>
                     {showModal && <MainAddOn closeModal={closeModal} />}
                 </div>

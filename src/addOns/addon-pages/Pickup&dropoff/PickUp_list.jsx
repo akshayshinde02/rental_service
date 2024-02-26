@@ -57,14 +57,8 @@ const PickUpList = ({setCrew,setHours}) => {
        
        <Button variant="contained" 
     color='info'
-    sx={{
-      position:"relative",
-      alignItems:"center",
-      justifyContent:"center",
-      display:"flex",width:"140px",
-    flexDirection:"row-reverse"
-      
-  }}
+   
+  className='btns12'
   onClick={handleClose} 
   >
         Select

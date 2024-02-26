@@ -18,6 +18,7 @@ import Towing from "./addOns/addon-pages/Towing";
 import Trailer from "./addOns/addon-pages/Trailer";
 import TruckRender from "./landingpage/TruckRender";
 import  Home from "./home1/Home";
+import Context from "./Context";
 
 function App() {
   return (<>
@@ -29,8 +30,9 @@ function App() {
 
  
     <BrowserRouter>
-    <Navbar></Navbar>
+    <Context>
     {/* <MuiStepper></MuiStepper> */}
+    <Navbar></Navbar>
       <Routes>
       <Route path="/" element={<Home/>}></Route>
       <Route path="/rendar" element={<TruckRender/>}></Route>
@@ -49,6 +51,7 @@ function App() {
 
        
       </Routes>
+      </Context>
     </BrowserRouter>
    </>
   );

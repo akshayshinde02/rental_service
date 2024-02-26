@@ -69,3 +69,83 @@
 .PickupAvailable span{
     margin-top: 4.5px;
 }
+.btns12{
+
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    width:140px;
+    margin-top: 10px;
+  flex-direction:row-reverse;
+}
+
+@media (max-width:426px) {
+    
+    .Listcontainer{
+        all:unset;
+        width: 100%;
+        padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 100px; */
+    margin-bottom: 20px;
+    transition: transform 500ms ease-in-out;
+    }
+
+    .PickupDetails {
+       
+      font-size: .8rem;
+      }
+
+    .btns12{
+
+        all:unset;
+      display:flex;
+      width:70px;
+      font-size: 2px;
+    /* flex-direction:row-reverse; */
+    }
+   
+    
+}
+@media (max-width:321px) {
+
+    .Listcontainer{
+        all:unset;
+        width: 90%;
+        padding: 1rem;
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+    border-radius: 0.5rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 100px; */
+    margin-bottom: 20px;
+    transition: transform 500ms ease-in-out;
+    }
+
+    .Listcontainer{
+        flex-direction: column;
+        margin-left: 10px;
+        justify-content: center;
+    }
+
+    .crewdetails{
+        margin-left: 30px;
+    }
+
+    .PickupDetails{
+        margin-right: 40px;
+    }
+
+    .btns12{
+        width: 100px;
+    }
+
+}

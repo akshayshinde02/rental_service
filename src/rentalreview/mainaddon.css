@@ -54,16 +54,16 @@
     font-size: 1rem;
 }
 
-.bts1{
+.bts11{
     margin-top: 10px;
     margin-bottom: 20px;
     background-color:  #0071c2;
     color:white;
     border-radius: 10px;
-    padding: 13px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left:460px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left:20px;
 }
 
 .allbtns{
@@ -132,4 +132,66 @@
     background-color: #0071c2;
     /* margin-top: -100px; */
     /* margin-left: 190px; */
+}
+
+@media(max-width:768){
+
+    .bts11{
+        all:unset;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background-color:  #0071c2;
+        color:white;
+        border-radius: 10px;
+        padding: 1px;
+        padding-left: 0px;
+        padding-right: 0px;
+        /* margin-left:20px; */
+    }
+}
+@media(max-width:320px){
+
+    .container{
+        position: fixed;
+        top:63%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 1.4rem 1rem;
+        border-radius: 0.6rem;
+        max-height: 76vh;
+        width: 100%;
+        overflow-y: auto;
+        background-color: white;
+    }
+    .bts11{
+        all:unset;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background-color:  #0071c2;
+        color:white;
+        border-radius: 10px;
+        padding-top: 6px;
+        padding-bottom: 11px;
+        padding-left: 8px;
+        padding-right: 8px;
+        /* margin-left:20px; */
+    }
+
+    .allbtns{
+        all:unset;
+        background-color:  #0071c2; /* Green */
+        border: none;
+        color: white;
+        padding-left: 9px;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-bottom: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 4px 4px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
 }

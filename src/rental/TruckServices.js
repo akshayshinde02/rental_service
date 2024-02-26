@@ -38,7 +38,7 @@ const TruckServices = () => {
 
         <div className='listSearch' >
             {/* <h1 className='IsTitle'>Google Map</h1> */}
-            <RentalGoogleMap/>
+            {/* <RentalGoogleMap/> */}
             </div>
 
 

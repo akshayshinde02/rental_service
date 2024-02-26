@@ -117,7 +117,7 @@ const EditReservation = () => {
                         <div className='addOndiv'>
                             <span className='titley1 bold  addon' style={{ margin: '25px' }} >Add On's</span><br /><br />
                             <div className='addondivss'>
-                                <div className='pickup'>
+                                <div className='pickup1'>
                                     <div className='center'>
                                         <img src={logo} className='addonimg ' /> <br />
                                         <h3 className='center'>Furniture Pads</h3>
@@ -126,7 +126,7 @@ const EditReservation = () => {
                             </button> */}
                                     </div>
                                 </div>
-                                <div className='pickup'>
+                                <div className='pickup1'>
                                     <div className='center'>
                                         <img src={logo} className='addonimg ' /> <br />
                                         <h3 className='center'>Furniture Pads</h3>
@@ -135,7 +135,7 @@ const EditReservation = () => {
                             </button> */}
                                     </div>
                                 </div>
-                                <div className='pickup'>
+                                <div className='pickup1'>
                                     <div className='center'>
                                         <img src={logo} className='addonimg ' /> <br />
                                         <h3 className='center'>Furniture Pads</h3>
@@ -145,7 +145,7 @@ const EditReservation = () => {
                                     </div>
                                 </div>
                              
-                                <div className='pickup'>
+                                <div className='pickup1'>
                                     <div className='center'>
                                         <img src={logo} className='addonimg ' /> <br />
                                         <h3 className='center'>Furniture Pads</h3>
@@ -154,7 +154,7 @@ const EditReservation = () => {
                             </button> */}
                                     </div>
                                 </div>
-                                <div className='pickup'>
+                                <div className='pickup1'>
                                     <div className='center'>
                                         <img src={logo} className='addonimg ' /> <br />
                                         <h3 className='center'>Furniture Pads</h3>
@@ -163,7 +163,7 @@ const EditReservation = () => {
                             </button> */}
                                     </div>
                                 </div>
-                                <div className='pickup'>
+                                <div className='pickup1'>
                                     <div className='center'>
                                         <img src={logo} className='addonimg ' /> <br />
                                         <h3 className='center'>Furniture Pads</h3>
@@ -172,17 +172,7 @@ const EditReservation = () => {
                             </button> */}
                                     </div>
                                 </div>
-                                <div className='pickup'>
-                                    <div className='center'>
-                                        <img src={logo} className='addonimg ' /> <br />
-                                        <h3 className='center'>Furniture Pads</h3>
-                                        {/* <button className='color'>
-                                Edit
-                            </button> */}
-                                    </div>
-                                </div>
-
-                                <div className='pickup'>
+                                <div className='pickup1'>
                                     <div className='center'>
                                         <img src={logo} className='addonimg ' /> <br />
                                         <h3 className='center'>Furniture Pads</h3>
@@ -192,7 +182,7 @@ const EditReservation = () => {
                                     </div>
                                 </div>
 
-                                <div className='pickup'>
+                                <div className='pickup1'>
                                     <div className='center'>
                                         <img src={logo} className='addonimg ' /> <br />
                                         <h3 className='center'>Furniture Pads</h3>
@@ -201,7 +191,8 @@ const EditReservation = () => {
                             </button> */}
                                     </div>
                                 </div>
-                                <div className='pickup'>
+
+                                <div className='pickup1'>
                                     <div className='center'>
                                         <img src={logo} className='addonimg ' /> <br />
                                         <h3 className='center'>Furniture Pads</h3>
@@ -210,7 +201,7 @@ const EditReservation = () => {
                             </button> */}
                                     </div>
                                 </div>
-                                <div className='pickup'>
+                                <div className='pickup1'>
                                     <div className='center'>
                                         <img src={logo} className='addonimg ' /> <br />
                                         <h3 className='center'>Furniture Pads</h3>
@@ -219,7 +210,16 @@ const EditReservation = () => {
                             </button> */}
                                     </div>
                                 </div>
-                                <div className='pickup'>
+                                <div className='pickup1'>
+                                    <div className='center'>
+                                        <img src={logo} className='addonimg ' /> <br />
+                                        <h3 className='center'>Furniture Pads</h3>
+                                        {/* <button className='color'>
+                                Edit
+                            </button> */}
+                                    </div>
+                                </div>
+                                <div className='pickup1'>
                                     <div className='center'>
                                         <img src={logo} className='addonimg ' /> <br />
                                         <h3 className='center'>Furniture Pads</h3>
@@ -297,7 +297,6 @@ const EditReservation = () => {
                         {isVissible ? 'Hide ' : 'Show '}
                     </button>
                 </div> */}
-
                 <div className='allbtn'>
                     {/* <button className='color btnss'>Cancel Reservation</button> */}
                     <button className='color btnss'>Resend Email</button>
@@ -307,6 +306,7 @@ const EditReservation = () => {
                     {showModal && <PopUpCancelPage closeModal={closeModal} confirmation={confirmation} />}
                     {showModal && <PopUpCancelPage closeModal={() => setShowModal(false)} confirmation={() => setconfirmation(false)} />}
                 </div>
+
             </div>
         </>
     )
