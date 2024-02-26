@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-import axios from 'axios';
+// import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+// import axios from 'axios';
 import './TruckService.css';
 import logo from './rental.jpg'
 import Items from './Items';
