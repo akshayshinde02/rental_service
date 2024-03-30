@@ -28,12 +28,27 @@ const Context = ({ children }) => {
   const [vendor, setVendor] = useState();
   const [service, setService] = useState();
   const [step, setStep] = useState();
-
-
+  const[vendors, setVendors] = useState([]);
+  
+  
+  
   const [category, setCategory] = useState('');
-  const [subCategory, setSubCategory] = useState('');
+  const [subCategory, setSubCategory] = useState('');// Truck or Car
   const [age, setage] = useState('');
 
+  // Rental Details
+  const [mainrental,setmainrental] = useState();        // Buget / Enterprise
+  const [subservicename,setsubservicename] = useState();   // Subservice
+  // const [rentalservicetype,setrentalservicetype] = useState();  // Truck or Car
+  const [rentalvehical,setrentalvehical] = useState();        // PickUp
+  const [modelType,setmodelType] = useState();        // 3/4 PickUp
+  const [rentalprice,setrentalprice] = useState();        // Price of Rental
+  const [rentalquantity,setrentalquantity] = useState();        // Quantity of Rental
+  
+  // Saving Date And Time Place
+  const [rentalplace,setrentalplace] = useState();
+  const [retnaltime,setrentaltime] = useState();
+  const [retnaldate,setretnaldate] = useState();
 
   useEffect(() => {
     const userInfo = JSON.parse(localStorage.getItem("userInfo"));
@@ -99,6 +114,28 @@ const Context = ({ children }) => {
         setSubCategory,
         age,
         setage,
+        vendors, 
+        setVendors,
+        mainrental,
+        setmainrental,
+        subservicename,
+        setsubservicename,
+        // rentalservicetype,
+        // setrentalservicetype,
+        rentalvehical,
+        setrentalvehical,
+        modelType,
+        setmodelType,
+        rentalprice,
+        setrentalprice,
+        rentalquantity,
+        setrentalquantity,
+        rentalplace,
+        setrentalplace,
+        retnaltime,
+        setrentaltime,
+        retnaldate,
+        setretnaldate
 
       }}>
       {children}

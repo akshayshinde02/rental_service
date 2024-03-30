@@ -26,11 +26,11 @@ export default function ColorToggleButton() {
         
       }}
     >
-      <ToggleButton  value="web">Recommended</ToggleButton>
-      <ToggleButton 
+      <ToggleButton  value="web">Recommended Lowest Price</ToggleButton>
+      {/* <ToggleButton 
        value="android">Lowest Price</ToggleButton>
       <ToggleButton 
-      value="ios">Highest Rating</ToggleButton>
+      value="ios">Highest Rating</ToggleButton> */}
     
     </ToggleButtonGroup>
     </div>

@@ -20,7 +20,59 @@ import TruckRender from "./landingpage/TruckRender";
 import  Home from "./home1/Home";
 import Context from "./Context";
 
+
+import { useEffect,useState } from "react";
+import axios from "axios";
+import { OrderState } from './Context';
+
 function App() {
+
+
+// Api's Backend
+
+// const [backendData,setBackendData] = useState([{}]);
+
+// useEffect(()=>{
+//   fetch("/getrental").then(
+//     response => response.json()
+//   ).then(
+//     data =>{
+//       setBackendData(data)
+//       console.log(backendData)
+//     }
+//   )
+// },[])
+
+// const {vendors,setVendors} = OrderState();
+// useEffect(()=>{
+//   fetchVendors();
+// },[]);
+
+// // const[vendors, setVendors] = useState([]);
+
+// const fetchVendors = async ()=>{
+//   try{
+//     const response = await axios.get("http://localhost:4000/api/user/vendors");
+//     // const orders = response.data;
+//     // const ordersJSON = JSON.stringify(orders, null, 2);
+//     // console.log(ordersJSON)
+//     await setVendors(response.data);
+    
+//     console.log(vendors)
+//   }catch(error){
+//     console.log(error);
+//   }
+// };
+
+
+
+
+
+
+
+
+
+
   return (<>
     
    {/* <AddOnCard title="Truck Add On's" description=" trucks Addon's for rent." /> */}

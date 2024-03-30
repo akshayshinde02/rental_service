@@ -7,8 +7,13 @@ import MuiStepper from '../steper/MuiStepper'
 import ReactDOM from 'react-dom'
 import {  faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { OrderState } from '../Context';
 
 const MainAddOn = ({ closeModal }) => {
+
+    const { category, subCategory, vendors,subservicename, setVendors,mainrental,setmainrental, setmodelType,  setrentalprice, setrentalquantity} = OrderState();
+    console.log(category, " ", subCategory, " "+ subservicename)
+  
 
     const navigate = useNavigate();
 
@@ -17,6 +22,7 @@ const MainAddOn = ({ closeModal }) => {
     // Increment and Decrment
     const [number1,setNumber1] = useState(0);
     const [number2,setNumber2] = useState(0);
+    const [number3,setNumber3] = useState(0);
 
     const increment1 = ()=>{
         setNumber1(prevNumber => prevNumber + 1);
@@ -33,6 +39,14 @@ const MainAddOn = ({ closeModal }) => {
     const decrement2 = ()=>{
         if(number2>0)
         setNumber2(prevNumber => prevNumber -1);
+    }
+    const increment3 = ()=>{
+        setNumber3(prevNumber => prevNumber + 1);
+    }
+
+    const decrement3 = ()=>{
+        if(number3>0)
+        setNumber3(prevNumber => prevNumber -1);
     }
 
     useEffect(() => {
@@ -158,25 +172,34 @@ const MainAddOn = ({ closeModal }) => {
                 <button className="bts11" onClick={() => goToRegistration1(true)}>
                         Continue
                     </button>
-                <div className='carditems'>
-                    <div className='pickup1 '>
+                <div>
+                {vendors.map((data, index) => {
+              if (subservicename === data.services[0].subservicename ) {
+                return (
+                    <div className='carditems' key={index}>
+                    {data.services.map((service, serviceIndex) => (
+                    <div className='pickup1 ' key={serviceIndex}>
                         <div className='centerq'>
                             <img src={logo1} className='addonimg ' /> <br />
-                            <h3 className='center'>FurniturePads</h3>
+                            <h3 className='center'>Furniture Pad</h3>
                             {/* <button className='color'>
                                 Edit
                             </button> */}
-                            <span className='textcolors'>$37.00</span> <span className='unit'>per unit</span>
+                            <span className='textcolors'>${service.addons.ferniturePad.price}.00</span> <span className='unit'>per unit</span><br/>
+                            <span className='textcolors'>availability - {service.addons.ferniturePad.quantity}</span> <span className='unit'></span><br/>
                             <button className='allbtns' onClick={decrement1}>-</button>
                             <span className='numbergen'>{number1}</span>
                             <button className='allbtns' onClick={increment1}>+</button>
                         </div>
                     </div>
-                    <div className='pickup1'>
+                      ))}
+                    {data.services.map((service, serviceIndex) => (
+                        <div className='pickup1' key={serviceIndex}>
                         <div className='centerq'>
                             <img src={logo1} className='addonimg ' /> <br />
                             <h3 className='center'>Hand Truck</h3>
-                            <span className='textcolors'>$37.00</span> <span className='unit'>per unit</span>
+                            <span className='textcolors'>${service.addons.handTruck.price}.00</span> <span className='unit'>per unit</span><br/>
+                        <span className='textcolors'>availability - {service.addons.handTruck.quantity}</span> <span className='unit'></span><br/>
                             <button className='allbtns' onClick={decrement2}>-</button>
                             <span className='numbergen'>{number2}</span>
                             <button className='allbtns' onClick={increment2}>+</button>
@@ -185,19 +208,23 @@ const MainAddOn = ({ closeModal }) => {
                             </button> */}
                         </div>
                     </div>
-                    <div className='pickup1'>
+                     ))}
+                    {data.services.map((service, serviceIndex) => (
+                        <div className='pickup1' key={serviceIndex}>
                         <div className='centerq'>
                             <img src={logo1} className='addonimg ' /> <br />
                             <h3 className='center'>Truck Pad</h3>
-                            <span className='textcolors'>$37.00</span> <span className='unit'>per unit</span>
-                            <button className='allbtns' onClick={decrement2}>-</button>
-                            <span className='numbergen'>{number2}</span>
-                            <button className='allbtns' onClick={increment2}>+</button>
+                            <span className='textcolors'>${service.addons.truckPad.price}.00</span> <span className='unit'>per unit</span><br/>
+                        <span className='textcolors'>availability - {service.addons.truckPad.quantity}</span> <span className='unit'></span><br/>
+                            <button className='allbtns' onClick={decrement3}>-</button>
+                            <span className='numbergen'>{number3}</span>
+                            <button className='allbtns' onClick={increment3}>+</button>
                             {/* <button className='color'>
                                 Edit
                             </button> */}
                         </div>
                     </div>
+                    ))}
                     <div className='pickup flexyed1'>
                        
                         <div className='center'>
@@ -279,6 +306,13 @@ const MainAddOn = ({ closeModal }) => {
                         </div>
                     </div> */}
 
+                  
+                </div>
+               );
+            } else {
+              return null;
+            }
+          })}
                 </div>
             </div>
 

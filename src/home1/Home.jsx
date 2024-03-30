@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect} from 'react'
 import './home.css'
 import { Button, FormControl,  MenuItem, Select, Typography } from '@mui/material'
 import RentalDate from './RentalDate';
 import TextField from '@mui/material/TextField';
 import { Link } from 'react-router-dom'
 import { OrderState } from '../Context';
+import axios from 'axios';
 
  
 
@@ -12,9 +13,14 @@ const Home = () => {
   // const [category, setCategory] = useState('');
   // const [subCategory, setSubCategory] = useState('');
   // const [age, setage] = React.useState('');
-  const {category,setCategory,subCategory,setSubCategory,age,setage} = OrderState();
+  const {category,setCategory,subCategory,setSubCategory,age,setage, 
+    setrentalplace,
+    setrentaltime,
+    setretnaldate
+  } = OrderState();
 // Options for the first dropdown
-const categories = ['Cars', 'Trucks'];
+
+const categories = [ 'Trucks'];
 
 // Options for the second dropdown based on the selected category
 const subCategories = {
@@ -28,7 +34,7 @@ const handleCategoryChange = (event) => {
   const selectedCategory = event.target.value;
   setCategory(selectedCategory);
   // Reset the second dropdown when the first dropdown changes
-  setSubCategory('');
+  // setSubCategory('');
 };
 
 
@@ -37,6 +43,26 @@ const handleCategoryChange = (event) => {
       setage(event.target.value);
     };
     
+//     const {vendors,setVendors} = OrderState();
+// useEffect(()=>{
+//   fetchVendors();
+// },[]);
+
+// // const[vendors, setVendors] = useState([]);
+
+// const fetchVendors = async ()=>{
+//   try{
+//     const response = await axios.get("http://localhost:4000/api/user/vendors");
+//     // const orders = response.data;
+//     // const ordersJSON = JSON.stringify(orders, null, 2);
+//     // console.log(ordersJSON)
+//     await setVendors(response.data);
+    
+//     // console.log(vendors)
+//   }catch(error){
+//     console.log(error);
+//   }
+// };
 
    
   return (
@@ -58,7 +84,7 @@ const handleCategoryChange = (event) => {
                  tabindex="-1"
                  type="checkbox"
                  value="on"
-        
+
                 />
                 <label className='home-label'>
                     Return to same Location
@@ -140,7 +166,7 @@ const handleCategoryChange = (event) => {
         </div>
         <div className="home_button">
         <Link to='/rendar'>
-          <Button variant='contained'>Continue</Button>
+          <Button variant='contained' >Continue</Button>
           </Link>
         </div>
        
